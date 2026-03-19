@@ -246,3 +246,40 @@ nav {
   color: var(--text-muted);
   margin-top: 0.1rem;
 }
+
+.hero-right {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-img {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to left, transparent 60%, var(--dark) 100%),
+    url("https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=80")
+      center/cover;
+  opacity: 0.5;
+}
+
+.hero-badge {
+  position: absolute;
+  bottom: 3rem;
+  left: 2rem;
+  background: var(--gold);
+  color: var(--dark);
+  padding: 1.25rem 1.75rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  z-index: 3;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.4);
+}
+
+.hero-badge strong {
+  display: block;
+  font-size: 1.8rem;
+  line-height: 1;
+}
