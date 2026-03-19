@@ -387,3 +387,109 @@ nav {
   line-height: 1.7;
   color: var(--text-muted);
 }
+
+/*- ABOUT -*/
+.about {
+  padding: 7rem 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-image {
+  position: relative;
+  aspect-ratio: 4/5;
+  background: var(--dark3);
+  overflow: hidden;
+}
+
+.about-image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=700&q=80")
+    center/cover;
+  opacity: 0.6;
+}
+
+.about-image-frame {
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(201, 168, 76, 0.3);
+  margin: 1rem;
+  pointer-events: none;
+}
+
+.about-image-badge {
+  position: absolute;
+  bottom: -1rem;
+  right: -1rem;
+  width: 7rem;
+  height: 7rem;
+  background: var(--gold);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  color: var(--dark);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  z-index: 2;
+}
+
+.about-image-badge strong {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.about-image-badge span {
+  font-size: 0.62rem;
+}
+
+.about-content .section-header {
+  text-align: left;
+}
+
+.about-content .section-eyebrow {
+  display: inline-flex;
+}
+
+.about-text {
+  font-size: 0.95rem;
+  line-height: 1.85;
+  color: var(--cream2);
+  opacity: 0.85;
+  margin-bottom: 1.25rem;
+}
+
+.about-values {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.value-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--cream2);
+}
+
+.value-item::before {
+  content: "";
+  width: 0.4rem;
+  height: 0.4rem;
+  background: var(--gold);
+  flex-shrink: 0;
+  transform: rotate(45deg);
+}
